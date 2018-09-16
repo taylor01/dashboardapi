@@ -12,9 +12,9 @@ module Organizations
   # @param [String] org_id dashboard organization ID
   # @return [Hash] results contains the current status of all devices
   def get_device_statuses(org_id)
-    self.make_api_call("/organizations/#{org_id}/deviceStatuses")
+    self.make_api_call("/organizations/#{org_id}/deviceStatuses", 'GET')
   end
-  
+
   # Returns the current license state for a given organization
   # @param [String] org_id dashboard organization ID
   # @return [Hash] results contains the current license state information
